@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.slim_toshiba.pfe_project_demo.SignIn"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email :"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:textColor="#1c2d75"
+        />
+    
+    <EditText
+        android:id="@+id/ed1"
+        android:inputType="textEmailAddress"
+        android:hint="Enter Email .."
+        android:textColorHint="#bdbfbd"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#1c2d75"
+        />
+    
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password :"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:textColor="#1c2d75"
+        />
+    
+    <EditText
+        android:id="@+id/pass"
+        android:hint="Enter Password .."
+        android:textColorHint="#bdbfbd"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#1c2d75"
+        android:inputType="textPassword"
+        />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <CheckBox
+            android:id="@+id/checkBoxId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:text="Show password"
+            android:onClick="showPassword"
+            android:textStyle="italic"
+            />
+    
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/mylog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#1c2d75"
+        android:onClick="testLogin"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="italic|bold" />
+
+
+</LinearLayout>

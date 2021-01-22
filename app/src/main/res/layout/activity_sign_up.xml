@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.slim_toshiba.pfe_project_demo.SignUp" >
+    
+    <!--
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Text here.."
+        android:textColorHint="#ff4081"
+        android:textSize="24sp"
+        android:id="@+id/fruitsId"
+        android:layout_above="@id/scrollId"
+    />
+    -->
+    
+    <ScrollView
+        android:id="@+id/scrollId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <RelativeLayout
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--android:layout_below="@id/fruitsId"-->
+            
+            <TextView
+                android:id="@+id/signUpTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:textSize="60sp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:padding="30dp"
+                />
+            
+            <LinearLayout
+                
+                android:id="@+id/firstnameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/signUpTextView">
+                
+                <TextView
+                    android:id="@+id/firstnameTextViewId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FirstName:"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    />
+                
+                <EditText
+                    android:id="@+id/firstnameEditTextId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/firstnameTextViewId"
+                    android:inputType="text"
+                    android:hint="Enter your firstname.."
+                    android:textColorHint="#FFC0C0"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+            
+            </LinearLayout>
+            
+            <LinearLayout
+                
+                android:id="@+id/lastnameLayoutId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstnameLayout"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:id="@+id/lastnameTextViewId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LastName:"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    />
+                
+                <EditText
+                    android:id="@+id/lastnameEditTextId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lastnameTextViewId"
+                    android:inputType="text"
+                    android:hint="Enter your lastname.."
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textColorHint="#FFC0C0"
+                    />
+            
+            </LinearLayout>
+            
+            <LinearLayout
+                
+                android:id="@+id/emailLayoutId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lastnameLayoutId"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:id="@+id/emailtextViewId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    />
+                
+                <EditText
+                    android:id="@+id/emailEditTextId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/emailtextViewId"
+                    android:inputType="textEmailAddress"
+                    android:hint="Enter your email.."
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textColorHint="#FFC0C0"
+                    />
+            
+            </LinearLayout>
+            
+            <LinearLayout
+                
+                android:id="@+id/passwordLayoutId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailLayoutId"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:id="@+id/passwordTextViewId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password:"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    />
+                
+                <EditText
+                    android:id="@+id/passwordEditTextId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/passwordTextViewId"
+                    android:inputType="textPassword"
+                    android:hint="Enter your password.."
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textColorHint="#FFC0C0"
+                    />
+            
+            </LinearLayout>
+            
+            <LinearLayout
+                
+                android:id="@+id/password2LayoutId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_below="@id/passwordLayoutId"
+                >
+                
+                <TextView
+                    android:id="@+id/password2TextViewId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Retype Password:"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    />
+                
+                <EditText
+                    android:id="@+id/password2EditTextId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/password2TextViewId"
+                    android:inputType="textPassword"
+                    android:hint="Retype password.."
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textColorHint="#FFC0C0"
+                    />
+                
+                <RelativeLayout
+                    
+                    android:id="@+id/relativeLayoutId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    
+                    <CheckBox
+                        android:id="@+id/showPasswordCheckBoxId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Show password"
+                        android:textColor="#2f4f70"
+                        android:textStyle="italic"
+                        android:layout_marginTop="30dp"
+                        android:background="#C2CCD8"
+                        android:onClick="showThePassword"
+                        />
+                
+                </RelativeLayout>
+                
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Save"
+                    android:textSize="25sp"
+                    android:layout_marginTop="30dp"
+                    android:background="#2B3E87"
+                    android:textColor="#FFECEC"
+                    android:onClick="saveInDb"
+                    />
+            
+            </LinearLayout>
+        
+        </RelativeLayout>
+    
+    </ScrollView>
+
+</RelativeLayout>

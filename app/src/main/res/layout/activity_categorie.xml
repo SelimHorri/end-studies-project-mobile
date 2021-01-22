@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.slim_toshiba.pfe_project_demo.Categorie"
+    android:orientation="vertical"
+    android:padding="15dp" >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenue:"
+        android:textSize="40sp"
+        android:textColor="#274370"
+        android:layout_gravity="center"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liste des categories à choisir:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp" />
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Etudiant"
+        android:textAllCaps="false" />
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Professionnel"
+        android:textAllCaps="false" />
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Famille"
+        android:textAllCaps="false" />
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Saisonnier"
+        android:textAllCaps="false" />
+    
+    <RelativeLayout
+        
+        android:layout_width="wrap_content"
+        android:layout_height="183dp" >
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:onClick="toSignUp"
+            android:text="S'inscrire"
+            android:textColor="@color/colorAccent" />
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="toLogin"
+            android:text="Connexion"
+            android:textColor="@color/colorAccent"
+            />
+    
+    </RelativeLayout>
+
+</LinearLayout>
